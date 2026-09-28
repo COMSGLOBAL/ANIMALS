@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <title>ANIMALS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">ANIMALS</div>
+    <div class="nav-links">
+      <a href="#prints">THE PRINTS</a>
+      <a href="#collection">COLLECTION</a>
+      <a href="#play" class="play-link">PLAY</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <img class="hero-case leopard" id="heroLeopard" alt="">
+    <img class="hero-case zebra" id="heroZebra" alt="">
+    <img class="hero-case crocodile" id="heroCrocodile" alt="">
+    <img class="hero-case bambi" id="heroBambi" alt="">
+    <img class="hero-case dalmatian" id="heroDalmatian" alt="">
+    <div class="hero-content">
+      <div class="kicker">NEW COLLECTION</div>
+      <h1>ANIMALS</h1>
+      <div class="hero-copy">Five iconic prints. One collection designed to bring the wild side into your everyday style.</div>
+      <div class="hero-actions">
+        <a href="#collection" class="btn btn-dark">DISCOVER THE COLLECTION</a>
+        <a href="#play" class="btn btn-light">PLAY WITH THE ANIMALS</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section prints" id="prints">
+    <div class="section-head">
+      <div class="section-label">MEET THE PRINTS</div>
+      <h2 class="section-title">Find your wild side.</h2>
+      <div class="section-copy">Five personalities. Five different ways to wear ANIMALS.</div>
+    </div>
+    <div class="print-grid" id="printGrid"></div>
+  </section>
+
+  <div class="quick-nav" id="collection"></div>
+  <div id="collectionSections"></div>
+
+  <section class="play-section" id="play">
+    <div class="section-label">READY FOR A BREAK?</div>
+    <h2 class="play-title">PLAY WITH<br>THE ANIMALS</h2>
+    <div class="play-copy">Enter the ANIMALS world. Pick your favourite print, take care of it and play.</div>
+    <div class="play-console-preview">
+      <div class="preview-screen" id="previewScreen">
+        <img id="previewCase" alt="Leopard Case">
+      </div>
+    </div>
+    <button type="button" class="play-button" id="openGame">PLAY NOW</button>
+
+    <div id="gameArea">
+      <button type="button" class="close-game" id="closeGame">← BACK TO COLLECTION</button>
+      <div class="game-console">
+        <div class="game-screen-frame">
+          <div class="game-top" id="gameTop">
+            <div class="game-name" id="gameName">LEOPARD</div>
+            <div class="game-speech" id="gameSpeech">Welcome to the savannah.</div>
+            <img class="game-product" id="gameProduct" alt="ANIMALS Case">
+          </div>
+        </div>
+        <div class="game-hinge"></div>
+        <div class="game-screen-frame">
+          <div class="game-bottom">
+            <div class="game-stats">
+              <div class="game-stat">LOVE<div class="game-meter"><span id="gameLove" style="width:72%"></span></div></div>
+              <div class="game-stat">FOOD<div class="game-meter"><span id="gameFood" style="width:65%"></span></div></div>
+              <div class="game-stat">WATER<div class="game-meter"><span id="gameWater" style="width:61%"></span></div></div>
+            </div>
+            <div class="game-animals" id="gameAnimals"></div>
+            <div class="game-actions">
+              <button type="button" class="game-action" id="gamePet">🖐️<br>PET</button>
+              <button type="button" class="game-action" id="gameFeed">🍎<br>FEED</button>
+              <button type="button" class="game-action" id="gameDrink">💧<br>DRINK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final"><h2>ANIMALS</h2><p>Five prints. One wild collection.</p></section>
+
+  <script src="data/products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
